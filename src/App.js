@@ -66,8 +66,8 @@ function App() {
       world: 'mundo',
       example: 'halimbawa',
       dog: 'aso',
-      pagkain: 'food',
-      
+      food: 'pagkain'
+
       // Add more translations as needed
     };
 

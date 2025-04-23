@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "quiz-app",
+=======
+  "name": "english-tagalog",
+>>>>>>> 6bbb561 (Initial Commit)
   "version": "0.1.0",
   "private": true,
   "dependencies": {

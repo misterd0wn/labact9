@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
+<<<<<<< HEAD
 const quizData = [
     { question: 'What is the capital of France?', options: ['Paris', 'London', 'Berlin', 'Madrid'], correctAnswer: 'Paris' },
     { question: 'What is 2 + 2?', options: ['3', '4', '5', '6'], correctAnswer: '4' },
@@ -53,6 +54,44 @@ function App() {
             )}
         </div>
     );
+=======
+function App() {
+  const [englishWord, setEnglishWord] = useState('');
+  const [tagalogTranslation, setTagalogTranslation] = useState('');
+
+  const translateWord = () => {
+    // Simulated translation mapping
+    const translations = {
+      hello: 'kamusta',
+      world: 'mundo',
+      example: 'halimbawa',
+      dog: 'aso',
+      pagkain: 'food',
+      
+      // Add more translations as needed
+    };
+
+    const translation = translations[englishWord.toLowerCase()];
+    setTagalogTranslation(translation || 'Translation not found');
+  };
+
+  return (
+    <div className="container">
+      <h1>English to Tagalog Translator</h1>
+      <div className="input-group">
+        <label>English Word:</label>
+        <input type="text" value={englishWord} onChange={(e) => setEnglishWord(e.target.value)} />
+      </div>
+      <button onClick={translateWord}>Translate</button>
+      {tagalogTranslation && (
+        <div>
+          <h2>Tagalog Translation:</h2>
+          <p>{tagalogTranslation}</p>
+        </div>
+      )}
+    </div>
+  );
+>>>>>>> 6bbb561 (Initial Commit)
 }
 
 export default App;
